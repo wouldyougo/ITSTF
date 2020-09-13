@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.05.03"/>
+    <PROJECT value="Itstf.exe"/>
+    <OBJFILES value="Itstf.obj UFDataI.obj ChildWin.obj Math\UData.obj Math\UMatrix.obj 
+      Main.obj UFgrts.obj UFgrtf.obj Math\UModel.obj Math\UCorrel.obj 
+      Math\UModelTmF.obj UFTmfCalc.obj about.obj Math\UCasual.obj 
+      Math\UModelArima.obj Math\UModelDif.obj Math\UModelExp.obj 
+      Math\UModelFFT.obj Math\UModelPol.obj Math\UMultiModel.obj 
+      Math\UReport.obj UFdiagr.obj Math\UModelScsr.obj UFTmSCalc.obj UFParam.obj"/>
+    <RESFILES value="Itstf.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) UFDataI.dfm ChildWin.dfm Main.dfm UFgrts.dfm UFgrtf.dfm 
+      UFTmfCalc.dfm about.dfm UFdiagr.dfm UFTmSCalc.dfm UFParam.dfm"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value="Tee50.lib DSGNRAIZEN_C5.lib bcbsmp50.lib Vclx50.lib VCLBDE50.lib 
+      DBGridPackc5.lib DBPLANC5.lib VCLDB50.lib GRIDPACKC5.lib Vcl50.lib"/>
+    <SPARELIBS value="Vcl50.lib GRIDPACKC5.lib VCLDB50.lib DBPLANC5.lib DBGridPackc5.lib 
+      VCLBDE50.lib Vclx50.lib bcbsmp50.lib DSGNRAIZEN_C5.lib Tee50.lib"/>
+    <PACKAGES value="Vcl50.bpi Vclx50.bpi advpnlpkgc5.bpi CalcExp50.bpi CEToolsPkgc5.bpi 
+      ChartLinkPkgc5.bpi CPBtn50.bpi DBGridPackc5.bpi dbplanc5.bpi Dclrx5.bpi 
+      Dclrxbd5.bpi Dclrxdb5.bpi dclusr50.bpi DsgnRaizeD_C5.bpi DsgnRaizeN_C5.bpi 
+      GGraph.bpi GridPackc5.bpi RaizeD_C5.bpi RaizeN_C5.bpi Rxbde5.bpi 
+      Rxctl5.bpi Rxdb5.bpi RZ251D50.bpi RZ251N50.bpi bcb97axserver50.bpi 
+      bcbie50.bpi bcbsmp50.bpi dbx50.bpi dcl31w50.bpi dclado50.bpi dclbde50.bpi 
+      dcldb50.bpi dclib50.bpi dclisp50.bpi dclmid50.bpi dclnet50.bpi 
+      dclnmf50.bpi dclocx50.bpi dclqrt50.bpi dclstd50.bpi dcltee50.bpi 
+      dcltqr50.bpi dsnide50.bpi dss50.bpi ibevnt50.bpi ibsmp50.bpi qrpt50.bpi 
+      tee50.bpi teedb50.bpi teeqr50.bpi teeui50.bpi vcljpg50.bpi webmid50.bpi 
+      bcb2kaxserver50.bpi"/>
+    <PATHCPP value=".;Math"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value=""/>
+    <SYSDEFINES value="NO_STRICT"/>
+    <MAINSOURCE value="Itstf.cpp"/>
+    <INCLUDEPATH value="Math;$(BCB)\LIB\lmd60;C:\_Component\RX\Units\;&quot;C:\_Program Files\Borland\CBuilder5\Projects\&quot;;Data;$(BCB)\include;$(BCB)\include\vcl"/>
+    <LIBPATH value="Math;$(BCB)\LIB\lmd60;C:\_Component\RX\Units\;&quot;C:\_Program Files\Borland\CBuilder5\Projects\&quot;;Data;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib"/>
+    <WARNINGS value="-w-par"/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-IMath -I$(BCB)\LIB\lmd60 -IC:\_Component\RX\Units\. 
+      -I&quot;C:\_Program Files\Borland\CBuilder5\Projects\.&quot; -IData -I$(BCB)\include 
+      -I$(BCB)\include\vcl -src_suffix cpp"/>
+    <CFLAG1 value="-O2 -H=$(BCB)\lib\vcl50.csm -Hc -Vx -Ve -X- -a8 -b- -k- -vi -c -tW -tWM"/>
+    <PFLAGS value="-$Y- -$L- -$D- -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zn"/>
+    <LFLAGS value="-D&quot;&quot; -aa -Tpe -x -Gn"/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
+  </LINKER>
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=0
+AutoIncBuild=0
+MajorVer=1
+MinorVer=0
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1033
+CodePage=1252
+
+[Version Info Keys]
+CompanyName=
+FileDescription=
+FileVersion=1.0.0.0
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=
+
+[Excluded Packages]
+$(BCB)\Projects\Bpl\dclusr50.bpl=Borland User Components
+$(BCB)\Bin\dclite50.bpl=Borland Integrated Translation Environment
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+  </IDEOPTIONS>
+</PROJECT>
